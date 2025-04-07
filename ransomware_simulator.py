@@ -16,7 +16,6 @@ class RansomwareSimulator:
         self.amount = random.randint(500, 2000)
         self.countdown_hours = 72
         self.deadline = datetime.now() + timedelta(hours=self.countdown_hours)
-        
         # Educational resources
         self.education_links = {
             "CISA Ransomware Guide": "https://www.cisa.gov/stopransomware",
@@ -87,7 +86,7 @@ class RansomwareSimulator:
         
         with open(note_path, "w") as note:
             note.write("""
-            ⚠️ WARNING: This is a ransomware simulation for educational purposes ⚠️
+            WARNING: This is a ransomware simulation for educational purposes
             
             In a real ransomware attack, your files would actually be encrypted right now.
             This is just a demonstration to show how ransomware works.
